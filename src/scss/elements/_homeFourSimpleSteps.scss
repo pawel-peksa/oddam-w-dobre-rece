@@ -1,0 +1,59 @@
+.fourSimpleSteps__container {
+  margin: 65px 0 80px;
+  // border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    text-align: center;
+    font-size: 38px;
+    color: $darkGray;
+    font-weight: 400;
+    letter-spacing: -1px;
+    @include decoration(100px);
+  }
+  .fourColumnsBackground {
+    background-color: $almostWhite;
+    width: 100%;
+  }
+
+  button {
+    @include ctaButton();
+    margin: 35px 0 80px;
+  }
+
+  .fourColumns__wrapper {
+    margin: 0 auto;
+    height: 325px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1120px;
+
+    .columnStep {
+      width: 170px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 83px;
+        height: 83px;
+      }
+
+      p {
+        margin: 8px 0;
+        text-align: center;
+      }
+
+      p:first-of-type {
+        font-size: 18px;
+      }
+
+      hr {
+        width: 70px;
+      }
+    }
+  }
+}
