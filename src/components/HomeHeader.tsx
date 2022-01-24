@@ -19,7 +19,6 @@ export const HomeHeader = () => {
         <br/>
         Oddaj niechciane rzeczy w zaufane ręce
       </h1>
-      <div className="decoration" />
       <div className="cta--buttonsWrapper">
         <Button link="logowanie" btnText="ODDAJ RZECZY"/>
         <Button link="logowanie" btnText="ZORGANIZUJ ZBIÓRKĘ"/>

@@ -50,16 +50,7 @@
       font-size: 38px;
       line-height: 55px;
       letter-spacing: -1px;
-      margin-bottom: 25px;
-    }
-
-    .decoration {
-      background-image: url("../../assets/decoration.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background: 2px solid red;
-      height: 40px;
-      width: 250px;
+      @include decoration(45px);
     }
     .cta--buttonsWrapper {
       display: flex;

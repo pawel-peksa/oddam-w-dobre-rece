@@ -1,0 +1,16 @@
+@mixin decoration($marginBottom) {
+  position: relative;
+  margin-bottom: $marginBottom;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%);
+    background-image: url("../../assets/decoration.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 250px;
+  }
+}
