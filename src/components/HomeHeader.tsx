@@ -3,15 +3,15 @@ import { Button } from "./Button";
 export const HomeHeader = () => {
   return <div className="homeHeader__container">
     <div className="navUser__container">
-      <Button btnText="Zaloguj" link="logowanie"/>
-      <Button btnText="Załóż konto" link="rejestracja"/>
+      <Button type="router" btnText="Zaloguj" link="logowanie"/>
+      <Button type="router" btnText="Załóż konto" link="rejestracja"/>
     </div>
     <div className="navMain__container">
-      <Button btnText="Start"/>
-      <Button btnText="O co chodzi?"/>
-      <Button btnText="O nas"/>
-      <Button btnText="Fundacja i organizacje"/>
-      <Button btnText="Kontakt"/>
+      <Button type="scroll" link="" btnText="Start"/>
+      <Button type="scroll" link="oCoChodzi" btnText="O co chodzi?"/>
+      <Button type="scroll" link="" btnText="O nas"/>
+      <Button type="scroll" link="" btnText="Fundacja i organizacje"/>
+      <Button type="scroll" link="" btnText="Kontakt"/>
     </div>
     <div className="cta__container">
       <h1>
@@ -20,8 +20,8 @@ export const HomeHeader = () => {
         Oddaj niechciane rzeczy w zaufane ręce
       </h1>
       <div className="cta--buttonsWrapper">
-        <Button link="logowanie" btnText="ODDAJ RZECZY"/>
-        <Button link="logowanie" btnText="ZORGANIZUJ ZBIÓRKĘ"/>
+        <Button type="router" link="logowanie" btnText="ODDAJ RZECZY"/>
+        <Button type="router" link="logowanie" btnText="ZORGANIZUJ ZBIÓRKĘ"/>
       </div>
     </div>
 </div>
