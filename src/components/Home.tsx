@@ -1,3 +1,4 @@
+import { HomeAboutUs } from "./HomeAboutUs";
 import { HomeFourSimpleSteps } from "./HomeFourSimpleSteps";
 import { HomeHeader } from "./HomeHeader";
 import { HomeThreeColumns } from "./HomeThreeColumns";
@@ -8,5 +9,7 @@ export const Home = () => {
       <HomeHeader />
       <HomeThreeColumns />
       <HomeFourSimpleSteps />
-    </div>)
+      <HomeAboutUs />
+    </div>
+  );
 };
