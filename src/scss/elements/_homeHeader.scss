@@ -1,0 +1,81 @@
+.background {
+  background-image: url("../../assets/hero_img.png");
+  background-size: contain;
+  background-position-x: -80%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.homeHeader__container {
+  margin: 0 auto;
+  padding: 37px 142px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  .navUser__container {
+    button {
+      color: $lightGray;
+      font-size: 14px;
+      padding: 10px 9px;
+      border: 1px solid transparent;
+      &:hover {
+        border: 1px solid $yellow;
+      }
+    }
+  }
+
+  .navMain__container {
+    button {
+      color: $darkGray;
+      font-size: 18px;
+      padding: 10px 9px;
+      border: 1px solid transparent;
+      &:hover {
+        border: 1px solid $darkGray;
+      }
+    }
+  }
+
+  .cta__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+
+    h1 {
+      font-weight: 400;
+      text-align: center;
+      font-size: 38px;
+      line-height: 55px;
+      letter-spacing: -1px;
+      margin-bottom: 25px;
+    }
+
+    .decoration {
+      background-image: url("../../assets/decoration.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background: 2px solid red;
+      height: 40px;
+      width: 250px;
+    }
+    .cta--buttonsWrapper {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 55px;
+
+      button {
+        border: 1px solid $darkGray;
+        height: 120px;
+        width: 310px;
+        font-size: 36px;
+        font-weight: lighter;
+        line-height: 45px;
+        padding: 0 35px;
+      }
+    }
+  }
+}
