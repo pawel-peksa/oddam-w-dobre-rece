@@ -1,0 +1,7 @@
+h2 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  @include decoration(100px);
+}

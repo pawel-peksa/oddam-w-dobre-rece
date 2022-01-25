@@ -4,14 +4,6 @@
   flex-direction: column;
   align-items: center;
 
-  h2 {
-    text-align: center;
-    font-size: 38px;
-    color: $darkGray;
-    font-weight: 400;
-    letter-spacing: -1px;
-    @include decoration(100px);
-  }
   .fourColumnsBackground {
     background-color: $almostWhite;
     width: 100%;
