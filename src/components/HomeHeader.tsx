@@ -11,7 +11,11 @@ export const HomeHeader = () => {
         <Button type="scroll" link="" btnText="Start" />
         <Button type="scroll" link="oCoChodzi" btnText="O co chodzi?" />
         <Button type="scroll" link="aboutUs" btnText="O nas" />
-        <Button type="scroll" link="" btnText="Fundacja i organizacje" />
+        <Button
+          type="scroll"
+          link="organizations"
+          btnText="Fundacja i organizacje"
+        />
         <Button type="scroll" link="" btnText="Kontakt" />
       </div>
       <div className="cta__container">

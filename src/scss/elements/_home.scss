@@ -5,3 +5,8 @@ h2 {
   letter-spacing: -1px;
   @include decoration(100px);
 }
+
+h3 {
+  font-size: 26px;
+  font-weight: 300;
+}

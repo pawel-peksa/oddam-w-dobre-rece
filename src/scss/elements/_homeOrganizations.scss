@@ -8,9 +8,14 @@
     max-width: 750px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     button {
-      padding: 23px 42px;
+      width: 210px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-size: 24px;
       border: 1px solid transparent;
 
@@ -25,10 +30,59 @@
     }
   }
 
-  p {
-    font-size: 24px;
-    text-align: center;
-    max-width: 640px;
-    margin-top: 30px;
+  .homeOrganizationContent {
+    width: 100%;
+    .typeDescription {
+      font-size: 24px;
+      max-width: 640px;
+      text-align: center;
+      margin: 30px auto 0;
+    }
+
+    .pagination__wrapper {
+      max-width: 1344px;
+      margin: 60px auto 80px;
+    }
+    .listOfItems {
+      li {
+        border-bottom: 1px solid $lightGray;
+      }
+      li:last-of-type {
+        border-bottom: 1px solid transparent;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 300;
+      }
+
+      .description {
+        padding-bottom: 30px;
+        margin-top: 6px;
+      }
+    }
+
+    .listOfButtons {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      button {
+        padding: 10px 10px;
+        margin: 10px;
+        border: 1px solid transparent;
+        &:hover {
+          background-color: $almostWhite;
+        }
+      }
+
+      .active {
+        border: 1px solid $lightGray;
+      }
+    }
   }
 }
