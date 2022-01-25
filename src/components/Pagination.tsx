@@ -38,6 +38,7 @@ export const Pagination = ({
   for (let i = 0; i < numberOfPages; i++) {
     pageButtons.push(
       <button
+        key={i + 1}
         onClick={() => setCurrentPage(i + 1)}
         className={currentPage === i + 1 ? "active" : ""}
       >

@@ -5,6 +5,9 @@
   align-items: flex-end;
   justify-content: flex-end;
   background-image: url("../../assets/background_contact_form.jpg");
+  background-size: cover;
+  background-position-x: 70%;
+  background-repeat: no-repeat;
   position: relative;
 
   &::after {
@@ -51,7 +54,8 @@
         border: none;
         background-color: transparent;
         border-bottom: 1px solid $darkGray;
-        padding: 2px;
+        padding: 2px 2px 0;
+        line-height: 1.1em;
 
         &:focus {
           border: 1px solid $yellow;
@@ -67,6 +71,11 @@
       textarea {
         width: 100%;
         resize: none;
+      }
+
+      .error {
+        color: red;
+        font-size: 12px;
       }
     }
 
