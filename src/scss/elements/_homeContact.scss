@@ -1,0 +1,117 @@
+.homeContact__container {
+  height: 1026px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-image: url("../../assets/background_contact_form.jpg");
+  position: relative;
+
+  &::after {
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .contentWrapper {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+  }
+  .form__container {
+    max-width: 530px;
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex;
+    z-index: 1;
+
+    .horizontal {
+      display: flex;
+      margin-bottom: 40px;
+    }
+
+    label {
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+      input,
+      textarea {
+        margin-top: 5px;
+        width: 256px;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid $darkGray;
+        padding: 2px;
+
+        &:focus {
+          border: 1px solid $yellow;
+          border-radius: 5px;
+          background-color: white;
+        }
+
+        &::placeholder {
+          color: #3c3c3c26;
+          line-height: 1.2em;
+        }
+      }
+      textarea {
+        width: 100%;
+        resize: none;
+      }
+    }
+
+    input[type="submit"] {
+      margin-top: 40px;
+      width: 150px;
+      height: 50px;
+      border: 1px solid $darkGray;
+      float: right;
+
+      &:hover {
+        background-color: $almostWhite;
+      }
+    }
+  }
+
+  .copyright {
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+
+    p > a {
+      text-decoration: underline;
+    }
+
+    .socialIcons {
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    .facebook {
+      background-image: url("../../assets/facebook.svg");
+      height: 30px;
+      width: 30px;
+    }
+
+    .instagram {
+      background-image: url("../../assets/instagram.svg");
+      height: 30px;
+      width: 30px;
+    }
+  }
+}

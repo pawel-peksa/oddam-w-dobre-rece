@@ -16,7 +16,7 @@ export const HomeHeader = () => {
           link="organizations"
           btnText="Fundacja i organizacje"
         />
-        <Button type="scroll" link="" btnText="Kontakt" />
+        <Button type="scroll" link="contact" btnText="Kontakt" />
       </div>
       <div className="cta__container">
         <h1>

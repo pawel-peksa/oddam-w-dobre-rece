@@ -23,4 +23,7 @@
   font-weight: lighter;
   line-height: 45px;
   padding: 0 35px;
+  &:hover {
+    background-color: $almostWhite;
+  }
 }
