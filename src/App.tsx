@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import { Login } from "./components/Login";
+import { Logout } from "./components/Logout";
 import { NotFound } from "./components/NotFound";
 import { Register } from "./components/Register";
 
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/logowanie" element={<Login />} />
         <Route path="/rejestracja" element={<Register />} />
+        <Route path="/wylogowano" element={<Logout />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

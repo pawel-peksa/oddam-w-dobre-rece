@@ -1,0 +1,23 @@
+.logout__container {
+  height: 100%;
+  border: 1px solid pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    line-height: 1.2em;
+  }
+
+  button {
+    font-weight: lighter;
+    border: 1px solid $darkGray;
+    padding: 15px;
+    font-size: 18px;
+
+    &:hover {
+      background-color: $almostWhite;
+    }
+  }
+}
