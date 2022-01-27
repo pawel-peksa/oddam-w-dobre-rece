@@ -1,4 +1,4 @@
-import { Button } from "./Button";
+import { Button } from "../Button";
 import shirt from "../../assets/shirt.svg";
 import bag from "../../assets/bag.svg";
 import search from "../../assets/search.svg";
@@ -40,7 +40,7 @@ export const HomeFourSimpleSteps = () => {
             />
           </div>
         </div>
-        <Button type="router" link="logowanie" btnText="ODDAJ RZECZY" />
+        <Button linkType="router" link="logowanie" btnText="ODDAJ RZECZY" />
       </div>
     </Element>
   );

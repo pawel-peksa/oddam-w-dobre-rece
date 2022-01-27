@@ -16,11 +16,11 @@
 }
 
 @mixin ctaButton() {
+  font-weight: lighter;
   border: 1px solid $darkGray;
   height: 120px;
   width: 310px;
   font-size: 36px;
-  font-weight: lighter;
   line-height: 45px;
   padding: 0 35px;
   &:hover {

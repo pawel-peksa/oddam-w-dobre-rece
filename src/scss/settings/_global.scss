@@ -1,3 +1,49 @@
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
 .hidden {
   display: none;
+}
+label {
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  input,
+  textarea {
+    margin-top: 5px;
+    width: 256px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid $darkGray;
+    padding: 2px 2px 0;
+    line-height: 1.1em;
+
+    &:focus {
+      border: 1px solid $yellow;
+      border-radius: 5px;
+      background-color: white;
+    }
+
+    &::placeholder {
+      color: #3c3c3c26;
+      line-height: 1.2em;
+    }
+  }
+  textarea {
+    width: 100%;
+    resize: none;
+  }
+
+  .error {
+    color: red;
+    font-size: 12px;
+  }
 }
