@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, FunctionComponent } from "react";
 import { Element } from "react-scroll";
 import { useForm } from "react-hook-form";
 
@@ -8,7 +8,7 @@ type FormValues = {
   message: string;
 };
 
-export const HomeContact = () => {
+export const HomeContact: FunctionComponent = () => {
   const [success, setSuccess] = useState<Boolean>(false);
   const {
     register,

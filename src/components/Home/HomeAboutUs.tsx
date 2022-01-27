@@ -1,4 +1,4 @@
-import signature from "../assets/signature.svg";
+import signature from "../../assets/signature.svg";
 import { Element } from "react-scroll";
 
 export const HomeAboutUs = () => {

@@ -5,7 +5,7 @@ import { HomeHeader } from "./HomeHeader";
 import { HomeOrganizations } from "./HomeOrginazations";
 import { HomeThreeColumns } from "./HomeThreeColumns";
 
-export const Home = () => {
+const Home = () => {
   return (
     <div className="background">
       <HomeHeader />
@@ -17,3 +17,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export default Home;

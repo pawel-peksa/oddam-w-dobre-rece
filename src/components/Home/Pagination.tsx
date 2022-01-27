@@ -1,3 +1,5 @@
+import { FunctionComponent, ReactElement } from "react";
+
 interface Props {
   toDisplay: SingleItem[];
   itemsPerPage: number;
@@ -10,13 +12,13 @@ interface SingleItem {
   itemsToCollect: string;
 }
 
-export const Pagination = ({
+export const Pagination: FunctionComponent<Props> = ({
   toDisplay,
   itemsPerPage,
   setCurrentPage,
   currentPage,
 }: Props) => {
-  const elements = toDisplay.map((singleItem, index) => {
+  const elements: ReactElement[] = toDisplay.map((singleItem, index) => {
     return (
       <li key={index}>
         <div>

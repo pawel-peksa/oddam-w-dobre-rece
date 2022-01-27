@@ -1,8 +1,8 @@
 import { Button } from "./Button";
-import shirt from "../assets/shirt.svg";
-import bag from "../assets/bag.svg";
-import search from "../assets/search.svg";
-import recycle from "../assets/recycle.svg";
+import shirt from "../../assets/shirt.svg";
+import bag from "../../assets/bag.svg";
+import search from "../../assets/search.svg";
+import recycle from "../../assets/recycle.svg";
 import { ColumnStep } from "./ColumnStep";
 import { Element } from "react-scroll";
 
