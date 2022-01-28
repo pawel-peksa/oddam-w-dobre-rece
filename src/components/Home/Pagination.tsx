@@ -36,6 +36,17 @@ export const Pagination: FunctionComponent<Props> = ({
   const elementsToDisplay = elements.slice(firstElementIndex, lastElementIndex);
   const numberOfPages = Math.ceil(toDisplay.length / itemsPerPage);
 
+  const generateNumbers = () =>
+    new Array(numberOfPages).fill(null).map((_, i) => (
+      <button
+        key={i + 1}
+        onClick={() => setCurrentPage(i + 1)}
+        className={currentPage === i + 1 ? "active" : ""}
+      >
+        {i + 1}
+      </button>
+    ));
+
   const pageButtons = [];
   for (let i = 0; i < numberOfPages; i++) {
     pageButtons.push(
@@ -52,7 +63,9 @@ export const Pagination: FunctionComponent<Props> = ({
   return (
     <div className="pagination__wrapper">
       <ul className="listOfItems">{elementsToDisplay}</ul>
-      {numberOfPages > 1 && <ul className="listOfButtons">{pageButtons}</ul>}
+      {numberOfPages > 1 && (
+        <ul className="listOfButtons">{generateNumbers()}</ul>
+      )}
     </div>
   );
 };
