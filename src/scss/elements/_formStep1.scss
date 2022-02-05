@@ -1,0 +1,32 @@
+.step1 {
+  .checkbox {
+    cursor: pointer;
+    display: flex;
+    padding: 10px 0;
+    margin: 10px 0;
+    align-items: center;
+    font-weight: 300;
+    font-size: 24px;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+
+      &:checked + span {
+        background-color: $yellow;
+      }
+    }
+    span {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      flex-shrink: 0;
+      border: 1px solid $darkGray;
+      cursor: pointer;
+      margin-right: 15px;
+    }
+  }
+}

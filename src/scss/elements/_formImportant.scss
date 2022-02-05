@@ -1,0 +1,13 @@
+.form__important {
+  background-color: $yellow;
+  .wrapper {
+    padding: 60px 120px;
+    h4 {
+      color: black;
+      text-align: left;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}

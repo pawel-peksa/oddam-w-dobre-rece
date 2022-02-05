@@ -1,0 +1,44 @@
+.step2 {
+  label {
+    font-size: 24px;
+    font-weight: 300;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    margin-top: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid black;
+      border-right: 1px solid black;
+      right: 20px;
+      top: 50%;
+      height: 15px;
+      width: 15px;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+}
+
+select {
+  // A reset of styles, including removing the default dropdown arrow
+  appearance: none;
+  background-color: transparent;
+  padding-left: 20px;
+  margin-left: 20px;
+  width: 300px;
+  height: 48px;
+
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  &::-ms-expand {
+    display: none;
+  }
+}
+option {
+  background-color: transparent;
+  outline: none;
+}

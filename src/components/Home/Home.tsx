@@ -1,5 +1,5 @@
 import { HomeAboutUs } from "./HomeAboutUs";
-import { HomeContact } from "./HomeContact";
+import { Contact } from "../Contact";
 import { HomeFourSimpleSteps } from "./HomeFourSimpleSteps";
 import { HomeHeader } from "./HomeHeader";
 import { HomeOrganizations } from "./HomeOrginazations";
@@ -16,7 +16,7 @@ const Home = () => {
       <HomeFourSimpleSteps />
       <HomeAboutUs />
       <HomeOrganizations />
-      <HomeContact />
+      <Contact />
     </div>
   );
 };

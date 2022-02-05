@@ -8,7 +8,7 @@ type FormValues = {
   message: string;
 };
 
-export const HomeContact: FunctionComponent = () => {
+export const Contact: FunctionComponent = () => {
   const [success, setSuccess] = useState<Boolean>(false);
   const {
     register,

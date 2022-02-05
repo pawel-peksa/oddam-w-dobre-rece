@@ -41,8 +41,9 @@
       margin-bottom: 40px;
     }
 
-    
-
+    label {
+      flex-direction: column;
+    }
     input[type="submit"] {
       margin-top: 40px;
       width: 150px;
